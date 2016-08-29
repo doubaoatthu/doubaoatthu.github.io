@@ -16,15 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/blog-home.css" rel="stylesheet">
-    <script src="https://cdn1.lncld.net/static/js/av-mini-0.6.10.js"></script>
-	<script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.2.0.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -57,44 +48,37 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+        <div class="container">
 
         <div class="row">
 
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
 
-               
-                <h2>
-                    <a href="blog2.html">Ultimate Solution: How to Setup Chinese and Japanese Input in Ubuntu OS.</a>
-                </h2>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 26, 2016</p>
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h2>Fixed Cuda Bug: cannot open shared object file</h2>
+
+                <!-- Author -->
+                <p>
+                    <span class="glyphicon glyphicon-time"></span>Posted on August 29, 2016 |   <a href="#">keras</a>, <a href="#">cuda</a>,</p>
                 <hr>
-                <!-- <p>我是预览我是预览.</p>
-                <a class="btn btn-primary" href="blog2.html">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <hr> -->
-                <h2>
-                    <a href="blog3.html">Keras: How to Combine RNNs and CNNs.</a>
-                </h2>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 29, 2016</p>
-                <hr>
+                <!-- <hr>
 
                 
-                <h2>
-                    <a href="blog4.html">Fixed Cuda Bug: cannot open shared object file.</a>
-                </h2>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 29, 2016</p>
-                <hr>
+                <img class="img-responsive" src="imgs/lucas.png" alt="lucas has got strange sleeping pose">
 
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="previous">
-                        <a href="#">&larr; Older</a>
-                    </li>
-                    <li class="next">
-                        <a href="#">Newer &rarr;</a>
-                    </li>
-                </ul>
+                <hr> -->
+
+                <!-- Post Content -->
+                <p >I got the following error on cuda</p>
+                <pre><code>cuda_ndarray.cu: libcublas.so.7.0:cannot open shared object file</code></pre>
+                <p>And I solved it using the following line</p>
+                <pre><code>sudo ldconfig $LD_LIBRARY_PATH </code></pre>
+
+                <p>This is all I know so far. If you have any questions, please feel free to email me.</p>
+                <hr>
 
             </div>
 
@@ -109,28 +93,14 @@
                             <ul class="list-unstyled">
                                 <li><a href="#">Linux</a>
                                 </li>
-                                <li><a href="#">日子</a>
+                                <li><a href="#">日子！</a>
                                 </li>
                             </ul>
                         </div>
-                        <!-- /.col-lg-6 -->
-                        <!-- <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Problems</a>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <!-- /.col-lg-6 -->
+                       
                     </div>
                     <!-- /.row -->
                 </div>
-
-                <!-- Side Widget Well -->
-                <!-- <div class="well">
-                    <h4>shashade</h4>
-                    <p>Dont know what to say</p>
-                </div> -->
-
             </div>
 
         </div>
@@ -142,9 +112,8 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Pageviews : <span data-hk-page="current"> - </span> | Copyright &copy; vera 2016</p>
+                    <p>Copyright &copy; vera 2016</p>
                 </div>
-                <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
         </footer>
