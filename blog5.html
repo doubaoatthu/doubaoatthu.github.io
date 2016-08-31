@@ -75,10 +75,29 @@
                 <p><strong>Solved: Cannot type Chinese in Sublime</strong></p>
                 <p>Solution on <a href="https://github.com/YoungZHU/sublime-imfix">Github.</a></p>
                 <hr>
+
                 <p><strong>Solved: How to download thunder files in linux.</strong></p>
                 <p>Run the following code in Terminal to get the decrypted url address</p>
                 <pre><code>echo thunderurl|base64 -d</code></pre>
                 <hr>
+
+                <p><strong>Solved: How to format a USB disk</strong></p>
+                <p>First, run the following command to check which device boot is the usb disk</p>
+                <pre><code>sudo fdisk -l</code></pre>
+                <p>Then, run the following to off-load the usb disk.</p>
+                <pre><code>umount path/to/dev/sdc4</code></pre>
+                <p>After that, you can safely format the usb disk using the following command.</p>
+                <pre><code>sudo mkfs.vfat path/to/dev/sdc4</code></pre>
+                <hr>
+
+                <p><strong>Solved: How to write an ISO file into your usb disk on Linux</strong></p>
+                <p>First, refering the last problem, check the location of usb disk and off-load it.</p>
+                <pre><code><p>sudo fdisk -l</p><p>umount path/to/dev/sdc4</p></code></pre>
+                <p>Then, use the following command.</p>
+                <pre><code>sudo dd if=path/to/iso/file of=path/to/usb/disk/dev/sdc4</code></pre>
+                <p>It will take a few munites to finish.</p>
+                <hr>
+
                 <p>This is all I know so far. If you have any questions, please feel free to email me.</p>
                 <hr>
 
