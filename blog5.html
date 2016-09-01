@@ -62,7 +62,7 @@
 
                 <!-- Author -->
                 <p>
-                    <span class="glyphicon glyphicon-time"></span> Last Updated on August 31, 2016 |   <a href="#">configure</a>, <a href="#">Ubuntu</a>,</p>
+                    <span class="glyphicon glyphicon-time"></span> Last Updated on September 1, 2016 |   <a href="#">configure</a>, <a href="#">Ubuntu</a>,</p>
                 <hr>
                 <!-- <hr>
 
@@ -98,6 +98,16 @@
                 <p>It will take a few munites to finish.</p>
                 <hr>
 
+                <p><strong>Solved: How to make your desktop ssh achievable.</strong></p>
+                <p>You need to check if <em>ssh server</em> is installed properly. Whether the user is permitted. And other iptable rules that might forbid ssh input/output.</p>
+                <pre><code><p>ps -ef | grep sshd</p><p>sudo iptables -L</p><p>ls -lrt/etc/ssh</p></code></pre>
+                <p>To install ssh server, type:</p>
+                <pre><code>sudo apt-get install openssh-server</code></pre>
+                <p>If it has not started automantically, start it by:</p>
+                <pre><code>sudo /etc/init.d/ssh start</code></pre>
+                <p>The default port number is 22, configure other ports by modifying the configure file located at <em>/etc/ssh/sshd_config</em>, and then restart the ssh server:</p>
+                <pre><code><p>sudo /etc/init.d/ssh stop</p><p>sudo /etc/init.d/ssh start</p></code></pre>
+                <hr>
                 <p>This is all I know so far. If you have any questions, please feel free to email me.</p>
                 <hr>
 
