@@ -108,8 +108,6 @@
                 <p>The default port number is 22, configure other ports by modifying the configure file located at <em>/etc/ssh/sshd_config</em>, and then restart the ssh server:</p>
                 <pre><code><p>sudo /etc/init.d/ssh stop</p><p>sudo /etc/init.d/ssh start</p></code></pre>
                 <hr>
-                <p>This is all I know so far. If you have any questions, please feel free to email me.</p>
-                <hr>
 
                 <p><strong>Solved: How to delete files and folders in Linux</strong></p>
                 <p>To delete files:</p>
@@ -117,6 +115,16 @@
                 <p>To delete a folder:</p>
                 <pre><code>rm -rf /path/to/folder/</code></pre>
                 <p>Here <code>-r</code> indicates to delete all the sub-files and sub-folders recursively. While <code>-f</code> indicates to delete directly.</p>
+                <hr>
+                
+                <p><strong>Solved: How to use ssh in Windows10</strong></p>
+                <p>Download <em>putty.exe</em> and <em>pscp.exe</em> from <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">here</a>.</p>
+                <p>Optional, copy the path of these files and add it into your environment path.</p>
+                <p>You can connect to a host through ssh by simply running <em>putty.exe</em>. Use the following command to transfer files.</p>
+                <pre><code><p>pscp -r path/ user@host:</p><p>pscp file user@host:</p></code></pre>
+                <hr>
+
+                <p>This is all I know so far. If you have any questions, please feel free to email me.</p>
                 <hr>
             </div>
 
