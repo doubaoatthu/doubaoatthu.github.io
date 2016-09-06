@@ -124,6 +124,18 @@
                 <pre><code><p>pscp -r path/ user@host:</p><p>pscp file user@host:</p></code></pre>
                 <hr>
 
+                <p><strong>Solved: How to install Tensorflow on Mac OSX</strong></p>
+                <p>When I tried to install Tensorflow simply by <code>pip</code>, I found lots of python errors that I cannot solve. Therefore I tried <em>Virtualenv</em> which is python dependent-free and it works just fine!</p>
+                <pre><code># Mac OS X
+$ sudo easy_install pip
+$ sudo pip install --upgrade virtualenv
+$ virtualenv --system-site-packages ~/tensorflow
+$ source ~/tensorflow/bin/activate  # If using bash
+$ source ~/tensorflow/bin/activate.csh  # If using csh
+(tensorflow)$  # Your prompt should change</code></pre>
+                <p>Just remember to activate the virtual environment each time you want to use Tensorflow.</p>
+                <hr>
+
                 <p>This is all I know so far. If you have any questions, please feel free to email me.</p>
                 <hr>
             </div>
